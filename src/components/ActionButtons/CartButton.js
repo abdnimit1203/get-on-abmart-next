@@ -26,7 +26,7 @@ const CartButton = () => {
             </h2>
 
             <div className=" flex-1 text-center items-center justify-center relative">
-              <p className=" absolute top-[50%] left-[25%] font-semibold">
+              <p className="  top-[50%] left-[25%] font-semibold">
                 Opps! your cart is empty!
               </p>
             </div>

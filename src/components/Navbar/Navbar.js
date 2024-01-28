@@ -6,12 +6,12 @@ import MiddleNav from "./MiddleNav";
 import BottomNav from "./BottomNav";
 const Navbar = () => {
   return (
-    <div className="bg-neutral ">
-      <div className=" w-[90%]  mx-auto">
+    <div className="px-[5%] bg-neutral ">
+
         <TopNav />
         <MiddleNav />
         <BottomNav />
-      </div>
+
     </div>
   );
 };

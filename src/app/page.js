@@ -6,6 +6,7 @@ import React from "react";
 import coffeeImg from "/public/pcoffee.JPG";
 import coffeeImg2 from "/src/assets/coffee.JPG";
 import Footer from "@/components/Footer/Footer";
+import MainSlider from "@/components/Sliders/MainSlider";
 
 const Homepage = () => {
   // throw new Error()
@@ -13,32 +14,11 @@ const Homepage = () => {
   return (
     <div>
       <Navbar />
-      <div className="diff aspect-[16/9]">
-        <div className="diff-item-1">
-          <div className="bg-primary text-primary-content text-9xl font-black grid place-content-center">
-            ABMART
-          </div>
-        </div>
-        <div className="diff-item-2">
-          <div className="bg-base-200 text-9xl font-black grid place-content-center">
-            ABMART
-          </div>
-        </div>
-        <div className="diff-resizer"></div>
+      <div className="px-[5%] mx-auto space-x-14 py-8">
+        <MainSlider />
       </div>
-      <p>WElcome to hoempage</p>
-      <Counter />
-      <Image
-        src={"https://i.ibb.co/3BX1gBZ/yuji.jpg"}
-        alt="itadori"
-        width={200}
-        height={200}
-      />
-      <Image src={coffeeImg} alt="coffee" width={200} height={200} />
-      <Image src={coffeeImg2} alt="coffee" width={200} height={200} />
-      <div>
-        <Footer />
-      </div>
+
+      <Footer />
     </div>
   );
 };
