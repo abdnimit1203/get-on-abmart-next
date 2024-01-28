@@ -1,13 +1,16 @@
 .swiper-pagination-bullet-active {
-  background: white !important;
+  background: #facc15 !important;
 }
 
 .swiper-button-prev:after,
 .swiper-button-next:after {
   font-size: 14px !important;
-  background: white;
+  font-weight: 900;
+  background: #facc15d8 ;
+  border: 1px solid rgba(0, 0, 0, 0.219);
   color: black;
   margin: 10px 20px;
   padding: 10px 14px;
   border-radius: 100%;
+ 
 }

@@ -1,0 +1,112 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Smartphone",
+      "brand": "TechGadget",
+      "price": 599.99,
+      "description": "High-performance smartphone with advanced features.",
+      "category": "Mobile",
+      "stock": 100
+    },
+    {
+      "id": 2,
+      "name": "Laptop",
+      "brand": "PowerBook",
+      "price": 1299.99,
+      "description": "Slim and powerful laptop for productivity and entertainment.",
+      "category": "Computers",
+      "stock": 50
+    },
+    {
+      "id": 3,
+      "name": "Smart TV",
+      "brand": "VisionTech",
+      "price": 799.99,
+      "description": "Ultra HD Smart TV with built-in streaming services.",
+      "category": "TVs",
+      "stock": 30
+    },
+    {
+      "id": 4,
+      "name": "Wireless Earbuds",
+      "brand": "AudioBliss",
+      "price": 99.99,
+      "description": "True wireless earbuds with noise cancellation technology.",
+      "category": "Audio",
+      "stock": 150
+    },
+    {
+      "id": 5,
+      "name": "Digital Camera",
+      "brand": "PhotoPro",
+      "price": 449.99,
+      "description": "Professional-grade digital camera for stunning photography.",
+      "category": "Cameras",
+      "stock": 40
+    },
+    {
+      "id": 6,
+      "name": "Gaming Console",
+      "brand": "GameMaster",
+      "price": 399.99,
+      "description": "High-performance gaming console for immersive gaming experiences.",
+      "category": "Gaming",
+      "stock": 20
+    },
+    {
+      "id": 7,
+      "name": "Fitness Tracker",
+      "brand": "FitTech",
+      "price": 79.99,
+      "description": "Smart fitness tracker with heart rate monitoring and GPS.",
+      "category": "Wearables",
+      "stock": 80
+    },
+    {
+      "id": 8,
+      "name": "Home Security Camera",
+      "brand": "SecureHome",
+      "price": 149.99,
+      "description": "Wireless home security camera with motion detection.",
+      "category": "Security",
+      "stock": 25
+    },
+    {
+      "id": 9,
+      "name": "Bluetooth Speaker",
+      "brand": "AudioSync",
+      "price": 59.99,
+      "description": "Portable Bluetooth speaker with rich sound quality.",
+      "category": "Audio",
+      "stock": 120
+    },
+    {
+      "id": 10,
+      "name": "Tablet",
+      "brand": "TabTech",
+      "price": 299.99,
+      "description": "Versatile tablet for work, entertainment, and creativity.",
+      "category": "Tablets",
+      "stock": 60
+    },
+    {
+      "id": 11,
+      "name": "Smart Home Hub",
+      "brand": "HomeConnect",
+      "price": 129.99,
+      "description": "Central hub for smart home automation and control.",
+      "category": "Smart Home",
+      "stock": 15
+    },
+    {
+      "id": 12,
+      "name": "Wireless Charging Pad",
+      "brand": "ChargeEase",
+      "price": 29.99,
+      "description": "Qi-compatible wireless charging pad for smartphones and other devices.",
+      "category": "Accessories",
+      "stock": 200
+    }
+  ]
+}

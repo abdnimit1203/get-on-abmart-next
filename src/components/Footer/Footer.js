@@ -34,15 +34,15 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Your email address.."
-              className="input input-bordered join-item text-neutral"
+              className="input input-bordered join-item text-neutral w-full"
             />
             <button className="btn btn-primary join-item">Subscribe</button>
           </div>
         </fieldset>
       </form>
       </div>
-      <div className="p-3 bg-slate-900 text-base-100 text-center">
-        <p> &copy; <span className="text-primary">GetOn - ABMart</span> all rights reserved. Made by - <Link href={"https://github.com/abdnimit1203"} className="text-sm font-semibold text-primary" target="_blank">ABD NIMIT</Link></p>
+      <div className="p-3 bg-slate-800 text-base-100 text-center ">
+        <p className="text-sm opacity-80"> &copy; <span className=" text-primary">GetOn - ABMart</span> all rights reserved. Made by - <Link href={"https://github.com/abdnimit1203"} className="text-sm font-semibold text-primary" target="_blank">ABD NIMIT</Link></p>
       </div>
       
     </footer>

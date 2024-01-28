@@ -8,7 +8,7 @@ const ProfileLoginButton = () => {
       <li>
         <details>
           <summary className=" bg-primary rounded-full text-neutral font-semibold hover:bg-primary"><FaRegUser className="text-3xl mr-1 inline " />
-      Login/ Account</summary>
+      <span className="hidden md:block">Login/ Account</span></summary>
           <ul className="p-2 z-10 text-neutral font-semibold">
             <li className="p-6 ">Hi, User Name</li>
             <Link href={'dashboard'}>

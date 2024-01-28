@@ -14,7 +14,7 @@ const Homepage = () => {
   return (
     <div>
       <Navbar />
-      <div className="px-[5%] mx-auto space-x-14 py-8">
+      <div className="px-[5%] mx-auto space-x-14 py-8 bg-slate-100">
         <MainSlider />
       </div>
 

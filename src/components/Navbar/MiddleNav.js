@@ -10,7 +10,7 @@ import LOGO from "/public/logo.PNG";
 const MiddleNav = () => {
   return (
    
-      <nav className="flex justify-between  text-amber-400 items-center p-2">
+      <nav className="flex justify-between  text-amber-400 items-center p-2 flex-col sm:flex-row">
         <div>
           <Link href="/">
             <Image src={LOGO} alt="ABMart" width={180} height={100} />
