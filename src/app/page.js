@@ -7,6 +7,7 @@ import coffeeImg from "/public/pcoffee.JPG";
 import coffeeImg2 from "/src/assets/coffee.JPG";
 import Footer from "@/components/Footer/Footer";
 import MainSlider from "@/components/Sliders/MainSlider";
+import Products from "./(withlayout)/products/page";
 
 const Homepage = () => {
   // throw new Error()
@@ -16,7 +17,9 @@ const Homepage = () => {
       <Navbar />
       <div className="px-[5%] mx-auto space-x-14 py-8 bg-slate-100">
         <MainSlider />
+        <Products/>
       </div>
+
 
       <Footer />
     </div>
