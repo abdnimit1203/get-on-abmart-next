@@ -6,7 +6,8 @@ export const metadata ={
 const AboutPage = () => {
     return (
         <div>
-            This is about route
+           
+            <button className='button-1 '>What About You!</button>
         </div>
     );
 };

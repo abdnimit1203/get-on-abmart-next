@@ -21,7 +21,7 @@ const CartButton = () => {
           ></label>
           <div className="menu w-80 min-h-full bg-base-200 text-base-content">
             <h2 className="bg-neutral text-white text-xl text-center rounded-xl py-3 font-semibold ">
-              Your Cart{" "}
+              Shopping Cart{" "}
               <AiOutlineShoppingCart className="text-3xl mr-1 inline " />
             </h2>
 
