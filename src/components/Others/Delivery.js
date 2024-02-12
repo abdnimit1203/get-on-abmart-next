@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { TbTruckDelivery } from "react-icons/tb";
+import delivery from "/public/images/delivery.gif"
 
 const Delivery = () => {
     return (
@@ -28,7 +29,7 @@ const Delivery = () => {
             </div>
             <div className="flex-1 hidden md:block">
             <Image
-          src="https://i.gifer.com/TwuB.gif"
+          src={delivery}
           alt="delivery image gif"
           className=" object-contain w-full rounded-r-xl"
           width={200}
