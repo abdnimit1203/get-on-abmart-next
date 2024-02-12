@@ -11,10 +11,27 @@ const Countdown = () => {
   let x = setInterval(() => {
     let now = new Date().getTime();
     let distance = countDownDate - now;
-    setDays(Math.floor(distance / (1000 * 60 * 60 * 24)) );
-    setHours(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) );
-    setMinutes(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)) );
-    setSeconds(Math.floor((distance % (1000 * 60)) / 1000) );
+
+    // let day = Math.floor(distance / (1000 * 60 * 60 * 24))
+    // let hour = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+    // let minute = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+    // let second = Math.floor((distance % (1000 * 60)) / 1000) 
+    setDays(Math.floor(distance / (1000 * 60 * 60 * 24)).toLocaleString('en-US', {
+      minimumIntegerDigits: 2,
+      useGrouping: false
+    }) );
+    setHours(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toLocaleString('en-US', {
+      minimumIntegerDigits: 2,
+      useGrouping: false
+    }));
+    setMinutes(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toLocaleString('en-US', {
+      minimumIntegerDigits: 2,
+      useGrouping: false
+    }) );
+    setSeconds(Math.floor((distance % (1000 * 60)) / 1000).toLocaleString('en-US', {
+      minimumIntegerDigits: 2,
+      useGrouping: false
+    }) );
 
     if (distance < 0) {
       clearInterval(x);

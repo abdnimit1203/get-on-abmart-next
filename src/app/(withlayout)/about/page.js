@@ -1,3 +1,4 @@
+import MiniCard from '@/components/Cards/MiniCard';
 import React from 'react';
 export const metadata ={
     title: "About ",
@@ -5,9 +6,10 @@ export const metadata ={
 }
 const AboutPage = () => {
     return (
-        <div>
+        <div className='py-10'>
            
             <button className='button-1 '>What About You!</button>
+            <MiniCard/>
         </div>
     );
 };

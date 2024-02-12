@@ -9,27 +9,22 @@ import { useState } from "react";
 const ProductCards = ({ product }) => {
   const [addWishlist, setAddWishlist] = useState(false);
 
+  const handleWishlist = (e) => {
+    e.stopPropagation();
+    e.nativeEvent.preventDefault();
+    setAddWishlist(!addWishlist);
+  };
   return (
-    <Link
-      href={`/products/${product.id}`}
-      className="z-0"
-      
-    >
-      <div className="bg-white w-[170px] xl:w-[200px] card rounded-md justify-evenly p-4 gap-3   hover:shadow-md transition duration-200 hover:shadow-[#7f9efa] h-full relative">
+    <Link href={`/products/${product.id}`} className="z-0 relative">
+      <div className="bg-white w-[170px] xl:w-[200px] card rounded-md justify-evenly p-4 gap-3   hover:shadow-md transition duration-200 hover:shadow-[#7f9efa] h-full ">
         <div
           className="absolute top-1 right-2 p-2 z-10  "
-          
+          onClick={handleWishlist}
         >
           {addWishlist ? (
-            <FaHeart className="text-xl text-pink-600" onClick={(e) => {
-              e.stopPropagation();
-              setAddWishlist(!addWishlist);
-            }} />
+            <FaHeart className="text-xl text-pink-600" />
           ) : (
-            <FaRegHeart className="text-xl text-pink-600" onClick={(e) => {
-            e.stopPropagation();
-            setAddWishlist(!addWishlist);
-          }} />
+            <FaRegHeart className="text-xl text-pink-600" />
           )}
         </div>
         <Image

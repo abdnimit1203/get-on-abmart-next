@@ -12,7 +12,7 @@ const FlashSale = () => {
     <div className="max-w-md space-y-6">
     <h2 className="text-4xl font-bold [text-shadow:_0_2px_3px_rgb(0_0_0_/_60%)]">% Flash Sale %</h2>
       
-      <p className="bg-primary text-neutral rounded-full font-semibold p-1 px-2 text-sm md:px-4 ">Discount up to 50% in kimited products</p>
+      <p className="bg-primary text-neutral rounded-full font-semibold p-1 px-2 text-sm md:px-4 ">Discount up to 50% in limited products</p>
       <Countdown/>
             <button className="button-1 duration-200 transition hover:scale-105">About the Offers</button>
     </div>

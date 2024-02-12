@@ -8,7 +8,7 @@ export const metadata = {
 const Products = async () => {
   const res = await fetch("https://dummyjson.com/products");
   const products = await res.json();
-  console.log(products);
+  // console.log(products);
 
   return (
     <div className="pt-10">
