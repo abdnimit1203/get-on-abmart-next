@@ -5,6 +5,7 @@ import { FaCheck } from "react-icons/fa";
 import StarRatings from "react-star-ratings";
 import { FaRegHeart, FaHeart } from "react-icons/fa";
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 const ProductCards = ({ product }) => {
   const [addWishlist, setAddWishlist] = useState(false);
@@ -13,12 +14,14 @@ const ProductCards = ({ product }) => {
     e.stopPropagation();
     e.nativeEvent.preventDefault();
     setAddWishlist(!addWishlist);
+    !addWishlist?toast.success(`Added to wishlist`):toast.error(`Removed from wishlist`)
+    
   };
   return (
-    <Link href={`/products/${product.id}`} className="z-0 relative">
+    <Link href={`/products/${product.id}`} className="z-0 relative group">
       <div className="bg-white w-[170px] xl:w-[200px] card rounded-md justify-evenly p-4 gap-3   hover:shadow-md transition duration-200 hover:shadow-[#7f9efa] h-full ">
         <div
-          className="absolute top-1 right-2 p-2 z-10  "
+          className="absolute end-4 top-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75"
           onClick={handleWishlist}
         >
           {addWishlist ? (
@@ -30,7 +33,7 @@ const ProductCards = ({ product }) => {
         <Image
           src={product?.images[0]}
           alt="product image"
-          className="rounded-xl w-[100px] h-[100px] xl:w-[150px] xl:h-[150px] mx-auto aspect-square object-contain"
+          className="rounded-xl w-[100px] h-[100px] xl:w-[150px] xl:h-[150px] mx-auto aspect-square object-contain transition duration-500 group-hover:scale-105"
           width={100}
           height={100}
         />

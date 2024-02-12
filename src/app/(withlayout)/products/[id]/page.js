@@ -5,8 +5,8 @@ import React from "react";
 const SingleProduct = async ({ params, searchParams }) => {
   const res = await fetch(`https://dummyjson.com/products/${params.id}`);
   const product = await res.json();
-  console.log(product);
-  console.log(params);
+  // console.log(product);
+  // console.log(params);
   return (
     <div className="py-10">
       {/* Dynamic Page: I am single product : {params.id}
